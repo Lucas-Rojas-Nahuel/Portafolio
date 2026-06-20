@@ -1,22 +1,48 @@
+import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar.tsx";
+import Footer from "./components/Footer.tsx";
+
 function App() {
+  const [scrolled, setScrolled] = useState(false);
+  const [dark, setDark] = useState(true);
+
+  // Toggle dark mode class on the root
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", dark);
+  }, [dark]);
+
+  // Listen to scroll events to toggle the scrolled state
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Function to scroll to a section by id
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const body = { fontFamily: "'DM Sans', system-ui, sans-serif" } as const;
+
   return (
-    <>
+    <div className="min-h-screen bg-background text-foreground" style={body}>
       {/* realizar el header */}
-      {/* <Header /> */}
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500  ${
+          scrolled
+            ? "bg-background/80 backdrop-blur-xl border-b border-border"
+            : "bg-transparent"
+        } `}
+      >
+        <Navbar dark={dark} setDark={setDark} scrollTo={scrollTo} />
+      </header>
       {/* realizar el main */}
-      {/* <Main/> */}
-      <section id="center" className="bg-yellow-200 text-blue-600">
-        <div>
-          <h1 className="text-blue-500 ">Portafolio mio</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-      </section>
+      {/* <MainContent/> */}
 
       {/* realizar el footer */}
-      {/* <Footer/> */}
-    </>
+      <Footer />
+    </div>
   );
 }
 
