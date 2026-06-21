@@ -17,7 +17,7 @@ function Navbar({
       {/* Logo / Name */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="text-xs sm:text-sm font-bold tracking-widest uppercase text-foreground hover:opacity-60 transition-opacity duration-200"
+        className="text-xs cursor-pointer sm:text-sm font-bold tracking-widest uppercase text-foreground hover:opacity-60 transition-opacity duration-200"
         style={{ ...display, letterSpacing: "0.18em" }}
       >
         LUCAS <span className="hidden sm:inline">ROJAS</span>
@@ -30,7 +30,7 @@ function Navbar({
             <button
               key={label}
               onClick={() => scrollTo(label.toLowerCase())}
-              className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+              className="text-xs cursor-pointer sm:text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               {label}
             </button>
