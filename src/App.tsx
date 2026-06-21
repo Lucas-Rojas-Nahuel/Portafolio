@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
+import HeroSection from "./sections/HeroSection.tsx";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background text-foreground" style={body}>
-      {/* realizar el header */}
+      {/* header */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500  ${
           scrolled
@@ -38,9 +39,12 @@ function App() {
         <Navbar dark={dark} setDark={setDark} scrollTo={scrollTo} />
       </header>
       {/* realizar el main */}
-      {/* <MainContent/> */}
+      <main className="max-w-5xl mx-auto px-6 sm:px-10">
+        {/* HERO SECTION */}
+        <HeroSection />
+      </main>
 
-      {/* realizar el footer */}
+      {/* footer */}
       <Footer />
     </div>
   );
