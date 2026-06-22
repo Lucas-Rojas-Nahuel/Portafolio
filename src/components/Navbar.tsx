@@ -26,13 +26,13 @@ function Navbar({
       {/* Right side */}
       <div className="flex items-center gap-4 sm:gap-7">
         <div className=" flex items-center gap-4 sm:gap-7">
-          {["Proyectos", "Sobre mí", "Contacto"].map((label) => (
+          {[{label:"Proyectos",key:"projects"}, {label:"Sobre mí",key:"about"}, {label:"Contacto",key:"contact"}].map((label) => (
             <button
-              key={label}
-              onClick={() => scrollTo(label.toLowerCase())}
+              key={label.key}
+              onClick={() => scrollTo(label.key)}
               className="text-xs cursor-pointer sm:text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
-              {label}
+              {label.label}
             </button>
           ))}
         </div>
