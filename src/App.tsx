@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
 import HeroSection from "./sections/HeroSection.tsx";
-import ExperienceTimeLine from "./sections/ExperienceTimeLine.tsx";
+/* import ExperienceTimeLine from "./sections/ExperienceTimeLine.tsx"; */
 import Projects from "./sections/Projects.tsx";
+import About from "./sections/About.tsx";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -56,6 +57,13 @@ function App() {
 
         {/* projects */}
         <Projects dark={dark} />
+
+        {/* ── Divider ── */}
+        <div className="border-t border-border" />
+
+        {/* sobre mí */}
+        <About/>
+
       </main>
 
       {/* footer */}
