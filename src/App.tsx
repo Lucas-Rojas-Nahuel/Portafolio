@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
 import HeroSection from "./sections/HeroSection.tsx";
+import ExperienceTimeLine from "./sections/ExperienceTimeLine.tsx";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -42,6 +43,13 @@ function App() {
       <main className="max-w-5xl mx-auto px-6 sm:px-10">
         {/* HERO SECTION */}
         <HeroSection />
+        
+        {/* ── Divider ── */}
+        <div className="border-t border-border" />
+        
+        {/* experience / time line*/}
+        {/* <ExperienceTimeLine/> */}
+        
       </main>
 
       {/* footer */}
