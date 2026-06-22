@@ -1,7 +1,8 @@
 import { FiLinkedin, FiGithub } from "react-icons/fi";
-import perfil from "../assets/perfil.png";
+import avatar from "../assets/avatar.png";
 
 function HeroSection() {
+    
   const mono = { fontFamily: "'JetBrains Mono', monospace" } as const;
   const display = { fontFamily: "'Epilogue', system-ui, sans-serif" } as const;
 
@@ -11,9 +12,9 @@ function HeroSection() {
       <div className="flex items-center gap-4 mb-10">
         <div
           className="w-13 h-13 sm:w-16 sm:h-16 rounded-full bg-secondary border border-border flex items-center justify-center shrink-0 select-none overflow-hidden"
-          aria-label="Alex Morgan avatar"
+          aria-label="Lucas Rojas avatar"
         >
-          <img src={perfil} alt="LR" className="w-full h-full  " />
+          <img src={avatar} alt="LR" className="w-full h-full  " />
         </div>
         <span
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-medium"
