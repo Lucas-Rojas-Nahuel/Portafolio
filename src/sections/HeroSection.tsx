@@ -7,7 +7,7 @@ function HeroSection() {
   const display = { fontFamily: "'Epilogue', system-ui, sans-serif" } as const;
 
   return (
-    <section className="pt-30 pb-28 sm:pt-40 sm:pb-36">
+    <section className="pt-30 pb-18 sm:pt-40 sm:pb-16">
       {/* Avatar + badge */}
       <div className="flex items-center gap-4 mb-10">
         <div
