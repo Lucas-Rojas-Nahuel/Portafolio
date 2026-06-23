@@ -13,21 +13,24 @@ function Footer() {
           </p>
           <div className="flex items-center gap-5">
             <a
-              href="#"
+              href="https://github.com/Lucas-Rojas-Nahuel"
+              target="_blank"
               className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               <FiGithub size={11} /> GitHub
             </a>
             <span className="text-border select-none">·</span>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/lucas-rojas-553bb5276/"
+              target="_blank"
               className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               <FiLinkedin size={11} /> LinkedIn
             </a>
             <span className="text-border select-none">·</span>
             <a
-              href="#"
+              href="mailto:contacto.lucasdev@gmail.com"
+              target="_blank"
               className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               <MdEmail size={11} /> Contacto

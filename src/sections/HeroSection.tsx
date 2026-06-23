@@ -1,8 +1,8 @@
 import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { TbFileCv } from "react-icons/tb";
 import avatar from "../assets/avatar.png";
 
 function HeroSection() {
-    
   const mono = { fontFamily: "'JetBrains Mono', monospace" } as const;
   const display = { fontFamily: "'Epilogue', system-ui, sans-serif" } as const;
 
@@ -56,12 +56,26 @@ function HeroSection() {
       {/* CTA row */}
       <div className="flex flex-wrap gap-3">
         {[
-          { icon: <FiLinkedin size={13} />, label: "LinkedIn", href: "https://www.linkedin.com/in/lucas-rojas-553bb5276/" },
-          { icon: <FiGithub size={13} />, label: "GitHub", href: "https://github.com/Lucas-Rojas-Nahuel" },
+          {
+            icon: <FiLinkedin size={13} />,
+            label: "LinkedIn",
+            href: "https://www.linkedin.com/in/lucas-rojas-553bb5276/",
+          },
+          {
+            icon: <FiGithub size={13} />,
+            label: "GitHub",
+            href: "https://github.com/Lucas-Rojas-Nahuel",
+          },
+          {
+            icon: <TbFileCv size={13} />,
+            label: "Curriculum Vitae",
+            href: "https://github.com/Lucas-Rojas-Nahuel",
+          },
         ].map(({ icon, label, href }) => (
           <a
             key={label}
             href={href}
+            target="_blank"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border text-sm text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-all duration-200"
           >
             {icon}
