@@ -1,20 +1,20 @@
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { TbFileCv } from "react-icons/tb";
-import avatar from "../assets/avatar.png";
+import avatar from "../assets/avatar.webp";
 
 function HeroSection() {
   const mono = { fontFamily: "'JetBrains Mono', monospace" } as const;
   const display = { fontFamily: "'Epilogue', system-ui, sans-serif" } as const;
 
   return (
-    <section className="pt-30 pb-18 sm:pt-40 sm:pb-16">
+    <section className="pt-25 pb-18 sm:pt-30 sm:pb-16">
       {/* Avatar + badge */}
       <div className="flex items-center gap-4 mb-10">
         <div
-          className="w-13 h-13 sm:w-16 sm:h-16 rounded-full bg-secondary border border-border flex items-center justify-center shrink-0 select-none overflow-hidden"
+          className="w-16 h-16 sm:w-23 sm:h-23 rounded-full bg-secondary border border-border flex items-center justify-center shrink-0 select-none overflow-hidden"
           aria-label="Lucas Rojas avatar"
         >
-          <img src={avatar} alt="LR" className="w-full h-full  " />
+          <img fetchpriority="high" src={avatar} alt="LR" className="w-full h-full  " />
         </div>
         <span
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-medium"

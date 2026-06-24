@@ -75,6 +75,7 @@ function Projects({ dark }: { dark: boolean }) {
             {/* Preview image */}
             <div className="aspect-[16/7] md:aspect-auto md:w-[40%] md:min-h-[280px] overflow-hidden bg-secondary shrink-0">
               <img
+                loading="lazy"
                 src={project.image}
                 alt={`${project.title} preview`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"

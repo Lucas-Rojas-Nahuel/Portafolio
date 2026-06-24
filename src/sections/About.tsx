@@ -1,4 +1,4 @@
-import avatar from "../assets/avatar.png";
+import avatar from "../assets/avatar.webp";
 
 const SKILLS = [
   "React",
@@ -87,6 +87,7 @@ export default function About() {
         {/* Illustration column */}
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
           <img
+            loading="lazy"
             src={avatar}
             width={200}
             height={200}
