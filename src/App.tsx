@@ -3,8 +3,12 @@ import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
 import HeroSection from "./sections/HeroSection.tsx";
 /* import ExperienceTimeLine from "./sections/ExperienceTimeLine.tsx"; */
-import Projects from "./sections/Projects.tsx";
-import About from "./sections/About.tsx";
+
+import { lazy, Suspense } from "react";
+
+// Carga perezosa de secciones que no se ven en el primer pantallazo
+const ProjectsSection = lazy(() => import("./sections/Projects.tsx"));
+const AboutSection = lazy(() => import("./sections/About.tsx"));
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -52,18 +56,19 @@ function App() {
         {/* experience / time line*/}
         {/* <ExperienceTimeLine/> */}
 
-        {/* ── Divider ── */}
-        <div className="border-t border-border" />
+        <Suspense fallback={<div className="h-40 animate-pulse bg-gray-100" />}>
+          {/* ── Divider ── */}
+          <div className="border-t border-border" />
 
-        {/* projects */}
-        <Projects dark={dark} />
+          {/* projects */}
+          <ProjectsSection dark={dark} />
 
-        {/* ── Divider ── */}
-        <div className="border-t border-border" />
+          {/* ── Divider ── */}
+          <div className="border-t border-border" />
 
-        {/* sobre mí */}
-        <About/>
-
+          {/* sobre mí */}
+          <AboutSection />
+        </Suspense>
       </main>
 
       {/* footer */}
