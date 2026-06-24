@@ -42,8 +42,8 @@ src/
 
 Si eres un reclutador, un desarrollador senior o simplemente quieres charlar sobre tecnología, no dudes en escribirme:
 
-**📧 Email:** contacto.lucasdev@gmail.com
-**💼 LinkedIn:** https://www.linkedin.com/in/lucas-rojas-553bb5276/
-**🖥️ GitHub:**: [Lucas Rojas](https://github.com/Lucas-Rojas-Nahuel)
+- **📧 Email:** contacto.lucasdev@gmail.com
+- **💼 LinkedIn:** https://www.linkedin.com/in/lucas-rojas-553bb5276/
+- **🖥️ GitHub:**: [Lucas Rojas](https://github.com/Lucas-Rojas-Nahuel)
 
 ¡Gracias por visitar Grano Urbano! ☕✨
