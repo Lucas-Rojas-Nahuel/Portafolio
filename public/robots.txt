@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Evita que indexe carpetas internas si no quieres
+Disallow: /node_modules/
