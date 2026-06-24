@@ -1,75 +1,49 @@
-# React + TypeScript + Vite
+# 🌐 Mi Portafolio Web Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Hola! Este es el repositorio de mi portafolio personal, diseñado para mostrar mis proyectos, mi stack tecnológico y mi evolución como desarrollador web Full Stack.
 
-Currently, two official plugins are available:
+El sitio está diseñado con un enfoque **ultra-minimalista, limpio y optimizado para Dark Mode**, poniendo todo el foco en la legibilidad y la experiencia del usuario.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 **[Ver mi portafolio en vivo](https://tu-dominio.dev)**
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 📸 Vista Previa
 
-Note: This will impact Vite dev & build performances.
+![Captura de pantalla del Portafolio](./public/og-image-full-size.png)
 
-## Expanding the ESLint configuration
+## ✨ Características de la Web
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🌓 **Diseño Dark Mode:** Estética visual oscura optimizada para desarrolladores, con tipografía de alta legibilidad.
+- 📱 **100% Responsivo:** Adaptado meticulosamente para dispositivos móviles, tablets y pantallas de escritorio mediante un sistema de rejilla fluido.
+- ⚡ **Alto Rendimiento:** Estructura ligera utilizando Vite para garantizar tiempos de carga instantáneos y un buen SEO.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tecnologías y Herramientas Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React.js** (Frontend library)
+- **Vite** (Build tool rápido y moderno)
+- **Tailwind CSS** (Framework de estilos enfocado en utilidades)
+- **Lucide React / Componentes de UI** (Iconografía limpia)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏗️ Estructura del Proyecto
+
+El código está organizado de manera modular para facilitar el mantenimiento y la adición de nuevos proyectos en el futuro:
+
+```text
+src/
+├── components/     # Componentes reutilizables ( Navbar, Footer)
+├── sections/       # Secciones principales (Hero, Projects, AboutMe, ExperienceTimeLine)
+├── assets/         # Imágenes
+├── App.tsx         # Componente principal que orquesta las secciones
+└── main.tsx        # Punto de entrada de la aplicación
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📬 Contacto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Si eres un reclutador, un desarrollador senior o simplemente quieres charlar sobre tecnología, no dudes en escribirme:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**📧 Email:** contacto.lucasdev@gmail.com
+**💼 LinkedIn:** https://www.linkedin.com/in/lucas-rojas-553bb5276/
+**🖥️ GitHub:**: [Lucas Rojas](https://github.com/Lucas-Rojas-Nahuel)
+
+¡Gracias por visitar Grano Urbano! ☕✨
