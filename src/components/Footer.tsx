@@ -21,7 +21,7 @@ function Footer() {
             </a>
             <span className="text-border select-none">·</span>
             <a
-              href="https://www.linkedin.com/in/lucas-rojas-553bb5276/"
+              href="https://www.linkedin.com/in/lucas-nahuel-rojas/"
               target="_blank"
               className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors duration-200"
             >

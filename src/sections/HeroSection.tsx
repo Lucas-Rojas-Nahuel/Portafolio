@@ -14,7 +14,12 @@ function HeroSection() {
           className="w-16 h-16 sm:w-23 sm:h-23 rounded-full bg-secondary border border-border flex items-center justify-center shrink-0 select-none overflow-hidden"
           aria-label="Lucas Rojas avatar"
         >
-          <img fetchpriority="high" src={avatar} alt="LR" className="w-full h-full  " />
+          <img
+            fetchpriority="high"
+            src={avatar}
+            alt="LR"
+            className="w-full h-full  "
+          />
         </div>
         <span
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-medium"
@@ -59,7 +64,7 @@ function HeroSection() {
           {
             icon: <FiLinkedin size={13} />,
             label: "LinkedIn",
-            href: "https://www.linkedin.com/in/lucas-rojas-553bb5276/",
+            href: "https://www.linkedin.com/in/lucas-nahuel-rojas/",
           },
           {
             icon: <FiGithub size={13} />,
@@ -68,8 +73,8 @@ function HeroSection() {
           },
           {
             icon: <TbFileCv size={13} />,
-            label: "Curriculum Vitae",
-            href: "https://github.com/Lucas-Rojas-Nahuel",
+            label: "Ver Currículum",
+            href: "/CV-Lucas-Rojas.pdf",
           },
         ].map(({ icon, label, href }) => (
           <a
