@@ -56,7 +56,20 @@ function App() {
         {/* experience / time line*/}
         {/* <ExperienceTimeLine/> */}
 
-        <Suspense fallback={<div className="h-40 animate-pulse bg-gray-100" />}>
+        <Suspense
+          fallback={
+            <div className="space-y-12 py-10 animate-pulse">
+              {/* Simula el título de la sección */}
+              <div className="h-8 bg-secondary rounded w-48" />
+
+              {/* Simula una o dos tarjetas de proyectos */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="h-64 bg-secondary rounded-xl" />
+                <div className="h-64 bg-secondary rounded-xl" />
+              </div>
+            </div>
+          }
+        >
           {/* ── Divider ── */}
           <div className="border-t border-border" />
 
