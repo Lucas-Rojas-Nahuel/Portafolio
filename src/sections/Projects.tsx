@@ -8,7 +8,7 @@ const PROJECTS = [
     description:
       "A real-time analytics dashboard for SaaS metrics with customizable widgets and role-based access controls. Built for teams that need full visibility without the noise.",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?&w=600&h=300&fit=crop&fm=webp&q=80&auto=format",
     code: "#",
     live: "#",
   },
@@ -19,7 +19,7 @@ const PROJECTS = [
     description:
       "A headless e-commerce platform crafted for independent creators — fast checkout, inventory management, and Stripe-powered payouts unified in one clean package.",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?&w=600&h=300&fit=crop&fm=webp&q=80&auto=format",
     code: "#",
     live: "#",
   },
@@ -30,7 +30,7 @@ const PROJECTS = [
     description:
       "A high-throughput REST API gateway with rate limiting, intelligent caching, and request queuing. Reduced third-party API costs by 60% for a client's production system.",
     image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=600&fit=crop&auto=format",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?&w=600&h=300&fit=crop&fm=webp&q=80&auto=format",
     code: "#",
     live: "#",
   },
@@ -73,7 +73,7 @@ function Projects({ dark }: { dark: boolean }) {
             }}
           >
             {/* Preview image */}
-            <div className="aspect-[16/7] md:aspect-auto md:w-[40%] md:min-h-[280px] overflow-hidden bg-secondary shrink-0">
+            <div className="aspect-[16/7] md:aspect-video md:w-[40%] overflow-hidden bg-secondary shrink-0">
               <img
                 loading="lazy"
                 src={project.image}
